@@ -1,7 +1,12 @@
+# frozen_string_literal: true
+
+# rubocop: disable Metrics/MethodLength
+
 require 'httparty'
 require 'nokogiri'
 require 'byebug'
 
+# class Shoes
 class Shoes
   attr_reader :shoes, :url, :parsed_page
 
@@ -13,7 +18,7 @@ class Shoes
 
   def scrape
     @parsed_page = parse_url(@url)
-    shoe_listings = @parsed_page.css('div.info') # 48 shoes
+    shoe_listings = @parsed_page.css('div.info')
     shoe_listings.each do |shoe_listing|
       shoe = {
         name: shoe_listing.css('h3.name').text,
@@ -37,3 +42,5 @@ class Shoes
     Nokogiri::HTML(unparsed_page)
   end
 end
+
+# rubocop: enable Metrics/MethodLength
