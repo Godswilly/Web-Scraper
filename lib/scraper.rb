@@ -23,6 +23,11 @@ class Shoes
       }
       @shoes << shoe
     end
+    display(@shoes)
+  end
+
+  def display(title)
+    title.each { |tit| puts tit }
   end
 
   private
