@@ -12,4 +12,11 @@ describe Shoes do
       expect(shoes.parsed_page.nil?).to eql(true)
     end
   end
+
+  describe '#scrape' do
+    it 'assigns a value to parse_page' do
+      shoes.scrape
+      expect(shoes.parsed_page.nil?).to eql(false)
+    end
+  end
 end
