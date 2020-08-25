@@ -34,7 +34,7 @@ Clone and run this repository by running these commands on the terminal:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Abidoyinsola1/Web-Scraper/issues).
+Feel free to check the [issues page](https://github.com/Godswilly/Web-Scraper/issues).
 
 ## 👍 Show your support
 
