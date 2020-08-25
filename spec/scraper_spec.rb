@@ -19,4 +19,11 @@ describe Shoes do
       expect(shoes.parsed_page.nil?).to eql(false)
     end
   end
+
+  describe '#display' do
+    it 'display all elements in the hash' do
+      dis = shoes.display(array)
+      expect(dis).to eq(array)
+    end
+  end
 end
