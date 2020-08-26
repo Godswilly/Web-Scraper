@@ -4,5 +4,6 @@
 
 require_relative '../lib/scraper.rb'
 
-s = Shoes.new
-s.scrape
+shoes = Shoes.new
+
+puts shoes.scrape

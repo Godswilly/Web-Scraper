@@ -13,6 +13,9 @@ describe Shoes do
     it 'initialize parsed_page to nil' do
       expect(shoes.parsed_page.nil?).to eql(true)
     end
+    it 'initialize parsed_page to nil' do
+      expect(shoes.parsed_page.nil?).to_not eql(false)
+    end
   end
 
   describe '#scrape' do
@@ -20,12 +23,9 @@ describe Shoes do
       shoes.scrape
       expect(shoes.parsed_page.nil?).to eql(false)
     end
-  end
-
-  describe '#display' do
-    it 'display all elements in the hash' do
-      dis = shoes.display(array)
-      expect(dis).to eq(array)
+    it 'assigns a value to parse_page' do
+      shoes.scrape
+      expect(shoes.parsed_page.nil?).to_not eql(true)
     end
   end
 end

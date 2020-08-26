@@ -1,8 +1,10 @@
 <h2 align="center">Jumia Men's Loafers and slip-ons Store Scraper</h2>
 
-This project is a scrape of a store in one of the biggest e-commerce store in Nigeria, Jumia. The data this project scrape are the names, the prices, discount prices and the ratings for the products.
+This project is a scrape of a store in one of the biggest e-commerce stores in Nigeria, Jumia. The data this project scrape are the names, the prices, discount prices, and the ratings for the products.
 
 ![screenshot](assets/Screenshot.png)
+
+## Link to the scrapped website (https://www.jumia.com.ng/mens-loafers-slip-ons/)
 
 ## 🔧 Built with<a name = "built_using"></a>
 
@@ -16,7 +18,6 @@ Clone and run this repository by running these commands on the terminal:
 - git clone https://github.com/Godswilly/Web-Scraper.git;
 - `gem install bundler`
 - `bundle install`
-- cd bin/
 - run ruby bin/main.rb
 - run `rspec` to run the test in the terminal
 ```
@@ -32,13 +33,13 @@ Clone and run this repository by running these commands on the terminal:
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Godswilly/Web-Scraper/issues).
 
 ## 👍 Show your support
 
-Give a ⭐️ if you like this project!
+Give and ⭐️ if you like this project!
 
 ## 📝 Acknowledgements
 

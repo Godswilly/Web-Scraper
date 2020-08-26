@@ -4,7 +4,6 @@
 
 require 'httparty'
 require 'nokogiri'
-require 'byebug'
 
 # class Shoes
 class Shoes
@@ -18,21 +17,16 @@ class Shoes
 
   def scrape
     @parsed_page = parse_url(@url)
-    shoe_listings = @parsed_page.css('div.info')
-    shoe_listings.each do |shoe_listing|
-      shoe = {
-        name: shoe_listing.css('h3.name').text,
-        price: shoe_listing.css('div.prc').text,
-        discount_price: shoe_listing.css('div.old').text,
-        rating: shoe_listing.css('div.rev').text
-      }
-      @shoes << shoe
+    @parsed_page.css('div.info').each do |shoe_listing|
+      shoe = []
+      name = shoe_listing.css('h3.name').text
+      price = shoe_listing.css('div.prc').text
+      discount_price = shoe_listing.css('div.old').text
+      rating = shoe_listing.css('div.rev').text
+      shoe.push(name, price, discount_price, rating)
+      @shoes.push(shoe)
     end
-    display(@shoes)
-  end
-
-  def display(title)
-    title.each { |tit| puts tit }
+    @shoes
   end
 
   private
