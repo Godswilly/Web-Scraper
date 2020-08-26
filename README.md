@@ -16,6 +16,7 @@ Clone and run this repository by running these commands on the terminal:
 
 ```
 - git clone https://github.com/Godswilly/Web-Scraper.git;
+- cd Web-Scraper
 - `gem install bundler`
 - `bundle install`
 - run ruby bin/main.rb
