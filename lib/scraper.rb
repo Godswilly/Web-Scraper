@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# rubocop: disable Metrics/MethodLength
-
 require 'httparty'
 require 'nokogiri'
 
@@ -36,5 +32,3 @@ class Shoes
     Nokogiri::HTML(unparsed_page)
   end
 end
-
-# rubocop: enable Metrics/MethodLength
