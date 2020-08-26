@@ -2,9 +2,9 @@
 
 This project is a scrape of a store in one of the biggest e-commerce stores in Nigeria, Jumia. The data this project scrape are the names, the prices, discount prices, and the ratings for the products.
 
-![screenshot](assets/Screenshot.png)
+![screenshot](assets/Screenshot_new.png)
 
-## Link to the scrapped website (https://www.jumia.com.ng/mens-loafers-slip-ons/)
+### [Link to the scrapped website](https://www.jumia.com.ng/mens-loafers-slip-ons/)
 
 ## 🔧 Built with<a name = "built_using"></a>
 
