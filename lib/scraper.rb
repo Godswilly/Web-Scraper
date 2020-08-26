@@ -14,13 +14,13 @@ class Shoes
   def scrape
     @parsed_page = parse_url(@url)
     @parsed_page.css('div.info').each do |shoe_listing|
-      shoe = []
-      name = shoe_listing.css('h3.name').text
-      price = shoe_listing.css('div.prc').text
-      discount_price = shoe_listing.css('div.old').text
-      rating = shoe_listing.css('div.rev').text
-      shoe.push(name, price, discount_price, rating)
-      @shoes.push(shoe)
+      shoe = {
+        name: shoe_listing.css('h3.name').text,
+        price: shoe_listing.css('div.prc').text,
+        discount_price: shoe_listing.css('div.old').text,
+        rating: shoe_listing.css('div.rev').text
+      }
+      @shoes << shoe
     end
     @shoes
   end
